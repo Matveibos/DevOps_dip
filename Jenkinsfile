@@ -3,6 +3,7 @@ pipeline {
     tools {
         terraform 'Terraform_Default'
     }
+    stages {
         stage('Terraform Init') {
             steps {
                 sh 'terraform init'
@@ -19,3 +20,4 @@ pipeline {
             }
         }
     }
+}
