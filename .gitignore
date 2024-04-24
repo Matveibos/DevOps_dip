@@ -1,0 +1,24 @@
+# Игнорировать директорию .terraform
+**/.terraform/*
+*.exe
+
+# Игнорировать все файлы .tfstate и .tfstate.*
+*.tfstate
+*.tfstate.*
+
+# Игнорировать файл crash.log
+crash.log
+
+# Игнорировать все файлы .tfvars, которые могут содержать чувствительные данные
+*.tfvars
+*.tfvars.json
+
+# Игнорировать файлы переопределения
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Игнорировать конфигурационные файлы CLI
+.terraformrc
+terraform.rc
