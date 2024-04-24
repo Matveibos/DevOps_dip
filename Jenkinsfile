@@ -7,7 +7,7 @@ pipeline {
         stage('Initialization') {
             steps {
                 script {
-                    terraformHome = tool('Terraform')
+                    terraformHome = tool('Terraform_Default')
                     env.PATH = "${terraformHome}/bin:${env.PATH}"
                 }
             }
